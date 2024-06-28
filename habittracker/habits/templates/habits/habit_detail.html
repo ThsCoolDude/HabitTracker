@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ habit.name }}</title>
+</head>
+<body>
+    <h1>{{ habit.name }}</h1>
+    <ul>
+        {% for record in records %}
+        <li>{{ record.date }} - {{ record.completed }}</li>
+        {% endfor %}
+    </ul>
+    <form method="post" action="{% url 'record_habit' habit.id %}">
+        {% csrf_token %}
+        <button type="submit">Record Today</button>
+    </form>
+    <a href="{% url 'habit_list' %}">Back to Habit List</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Habit</title>
+</head>
+<body>
+    <h1>Delete Habit</h1>
+    <p>Are you sure you want to delete the habit "{{ habit.name }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Yes, delete</button>
+        <a href="{% url 'habit_list' %}">No, go back</a>
+    </form>
+</body>
+</html>

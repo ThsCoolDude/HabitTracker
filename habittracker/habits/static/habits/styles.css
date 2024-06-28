@@ -1,0 +1,89 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            gap: 20px; /* Spacing between items */
+            justify-content: center; /* Center items horizontally */
+            align-items: flex-start; /* Align items at the top */
+        }
+        .habit-list {
+            width: 100%; /* Full width on smaller screens */
+            max-width: 400px; /* Limit maximum width */
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .habit-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .habit-list th, .habit-list td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .habit-list th {
+            background-color: #e0e0e0;
+        }
+        .habit-name {
+            font-weight: bold;
+        }
+        .habit-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .delete-link {
+            color: red;
+            text-decoration: none;
+        }
+        #habitConsistencyChart {
+            width: 100%; /* Full width on smaller screens */
+            max-width: 600px; /* Limit maximum width */
+            height: 400px; /* Set height for the chart */
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .center {
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1
+        {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logout-link {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
